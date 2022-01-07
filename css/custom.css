@@ -1,0 +1,17 @@
+.underline{
+    width: 220px;
+    height: 6px;
+    background-color: rebeccapurple;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Sarabun', sans-serif;
+}
+
+.nav-link,nav-item{
+    font-family: 'Sarabun', sans-serif;
+}
+
+.dropdown-menu{
+    font-family: 'Sarabun', sans-serif;
+}
