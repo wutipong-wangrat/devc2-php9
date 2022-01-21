@@ -1,5 +1,5 @@
 <?php include("includes/header.php"); ?>
-
+<?php session_start();?>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -15,6 +15,8 @@
                                     <h3 class="card-title text-center text-danger fs-2">Phalakorn System</h3>
                                 </div>
                             </div>
+
+                            <?php include("message.php");?>
 
                             <form action="code.php" method="post">
                                 <div class="form-group">

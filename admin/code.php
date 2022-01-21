@@ -1,5 +1,5 @@
 <?php include("includes/dbconnect.php");?>
-
+<?php session_start();?>
 <?php 
 if(isset($_POST['login_btn'])){
     $email_login = $_POST['email'];
@@ -9,10 +9,13 @@ if(isset($_POST['login_btn'])){
     $query_run=mysqli_query($conn,$query);
 
     if(mysqli_fetch_array($query_run)){
-        echo"OK";
+        $_SESSION['email']=$email_login;
+        header("Location: index.php");
     }
     else{
-        echo"NO";
+        $_SESSION['message']="อีเมลหรือรหัสผ่านไม่ถูกต้อง";
+        header("Location: login.php");
     }
 }
 ?>
+
