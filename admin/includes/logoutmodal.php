@@ -23,7 +23,11 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
+                    
+                    <form action="code.php" method="post">
+                        <button class="btn btn-primary" name="logout_btn">Logout2</button>
+                    </form>
+                    
                 </div>
             </div>
         </div>
