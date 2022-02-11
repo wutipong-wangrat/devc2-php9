@@ -11,9 +11,9 @@
                         <div class="col-md-12">
 
                             <div class="card-text mx-auto" style="width: 20rem;">
-                                <img src="img/thanos.png" class="card-img-top" alt="img">
+                                <img src="img/cat.png" class="card-img-top" alt="img">
                                 <div class="card-body">
-                                    <h3 class="card-title text-center text-warning fs-2">ผู้ดูแลระบบ</h3>
+                                    <h3 class="card-title text-center text-warning fs-2">Phalakorn University</h3>
                                 </div>
                             </div>
 
@@ -26,11 +26,11 @@
 
                             <form action="code.php" method="post">
                                 <div class="form-group">
-                                    <label class="col-sm-3 col-form-label text-primary">อีเมลล์</label>
+                                    <label class="col-sm-3 col-form-label text-primary">Email</label>
                                     <input type="email" name="email" class="form-control" required placeholder="Enter Email Address">
                                 </div>
                                 <div class="form-group">
-                                    <label class="col-sm-3 col-form-label text-primary">รหัสผ่าน</label>
+                                    <label class="col-sm-3 col-form-label text-primary">Password</label>
                                     <input type="password" name="password" class="form-control" required placeholder="Enter Password">
                                 </div>
                                 <button type="submit" name="login_btn" class="btn btn-primary btn-block">เข้าสู่ระบบ</button>
