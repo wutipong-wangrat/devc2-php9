@@ -61,3 +61,37 @@ if (isset($_POST['news_update'])) {
     }
 }
 ?>
+
+
+<?php
+if(isset($_POST['news_deletebtn']))
+{
+    $id = $_POST['delete_id'];
+    $query = "DELETE FROM hotnew WHERE id='$id' ";
+    $result = mysqli_query($con,$query);
+
+    if($result){
+        $_SESSION['success'] = "ข่าวสาร ถูกลบแล้ว";
+        header('Location: news1.php');
+    }
+    else{
+        $_SESSION['status'] = "ข่าวสาร ยังไม่ถูกลบแล้ว";
+        header('Location: news1.php');
+    }
+
+    $delete_image = $_POST['delete_image'];
+    $delete_doc = $_POST['delete_doc'];
+    $query = "DELETE FROM hotnew WHERE id='$delete_image' ";
+    $result = mysqli_query($con,$query);
+
+    if (file_exists("upload/hotnew_images/$delete_image")){
+        unlink("upload/hotnew_images/$delete_image");
+        header('Location: news1.php');
+    }
+
+    if (file_exists("upload/hotnew_docs/$delete_doc")){
+        unlink("upload/hotnew_docs/$delete_doc");
+        header('Location: news1.php');
+    }
+}
+?>
