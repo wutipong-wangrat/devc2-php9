@@ -6,6 +6,8 @@
 
 <?php include("includes/topbar.php"); ?>
 
+<?php include("news_code.php");?>
+
 <!-- Begin Page Content -->
 <div class="container-fluid">
 
