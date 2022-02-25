@@ -89,9 +89,9 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="../index.php" target="_blank">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                    <span>First Page</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
